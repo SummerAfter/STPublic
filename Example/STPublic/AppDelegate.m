@@ -6,9 +6,9 @@
 //  Copyright (c) 2021 renchaoyue. All rights reserved.
 //
 
-#import "STAppDelegate.h"
+#import "AppDelegate.h"
 
-@implementation STAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

@@ -8,7 +8,7 @@
 
 #import "STViewController.h"
 
-@interface STViewController ()
+@interface ViewController ()
 
 @end
 

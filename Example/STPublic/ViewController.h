@@ -1,5 +1,5 @@
 //
-//  STAppDelegate.h
+//  STViewController.h
 //  STPublic
 //
 //  Created by renchaoyue on 01/27/2021.
@@ -8,8 +8,6 @@
 
 @import UIKit;
 
-@interface STAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface ViewController : UIViewController
 
 @end
