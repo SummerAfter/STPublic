@@ -1,0 +1,22 @@
+{
+  "name": "STPublic",
+  "version": "0.1.0",
+  "summary": "公共组件",
+  "description": "公共组件化",
+  "homepage": "https://github.com/SummerAfter/STPublic",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "SummerAfter": "130220604@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/SummerAfter/STPublic.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "STPublic/Classes/**/*"
+}

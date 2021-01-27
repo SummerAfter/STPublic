@@ -1,0 +1,6 @@
+framework module STPublic {
+  umbrella header "STPublic-umbrella.h"
+
+  export *
+  module * { export * }
+}
