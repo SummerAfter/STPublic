@@ -6,13 +6,13 @@
 //  Copyright (c) 2021 renchaoyue. All rights reserved.
 //
 
-#import "STViewController.h"
+#import "ViewController.h"
 
 @interface ViewController ()
 
 @end
 
-@implementation STViewController
+@implementation ViewController
 
 - (void)viewDidLoad
 {
