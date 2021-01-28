@@ -18,6 +18,8 @@
 		C313D99025C14CEA00EBC805 /* UILabel+STkit.m in Sources */ = {isa = PBXBuildFile; fileRef = C313D98E25C14CEA00EBC805 /* UILabel+STkit.m */; };
 		C313D9B325C1531600EBC805 /* UILabel+STAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = C313D9B125C1531600EBC805 /* UILabel+STAttributedString.h */; };
 		C313D9B425C1531600EBC805 /* UILabel+STAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = C313D9B225C1531600EBC805 /* UILabel+STAttributedString.m */; };
+		C313D9C425C15FE200EBC805 /* UIButton+STKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C313D9C225C15FE200EBC805 /* UIButton+STKit.h */; };
+		C313D9C525C15FE200EBC805 /* UIButton+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C313D9C325C15FE200EBC805 /* UIButton+STKit.m */; };
 		C8D77BE1334D7A217504D26711A64771 /* STPublic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 436710DEFBB85DA6EC6C2FD2B59D34C6 /* STPublic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA96CBB8E35E8FDA18686362E6CF028C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		EB1BE80480385373BFCAF7F3266BA227 /* Pods-STPublic_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC03615519F4EE0DDBFD84F281D56EC2 /* Pods-STPublic_Example-dummy.m */; };
@@ -67,6 +69,8 @@
 		C313D98E25C14CEA00EBC805 /* UILabel+STkit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+STkit.m"; sourceTree = "<group>"; };
 		C313D9B125C1531600EBC805 /* UILabel+STAttributedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+STAttributedString.h"; sourceTree = "<group>"; };
 		C313D9B225C1531600EBC805 /* UILabel+STAttributedString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+STAttributedString.m"; sourceTree = "<group>"; };
+		C313D9C225C15FE200EBC805 /* UIButton+STKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+STKit.h"; sourceTree = "<group>"; };
+		C313D9C325C15FE200EBC805 /* UIButton+STKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+STKit.m"; sourceTree = "<group>"; };
 		C4E6F8C6C1FE1CAB3D5C40DFC1648B19 /* Pods-STPublic_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-STPublic_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C59EE4E1304EFEA5EA08F47A4385FFBB /* STPublic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STPublic-dummy.m"; sourceTree = "<group>"; };
 		C77D74C3D6124A3D47AB1DF09D59FEC7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -214,6 +218,7 @@
 		C313D9AF25C152EB00EBC805 /* STCategory */ = {
 			isa = PBXGroup;
 			children = (
+				C313D9C125C15FC700EBC805 /* UIButton */,
 				C313D9B025C152F800EBC805 /* UILabel */,
 			);
 			path = STCategory;
@@ -228,6 +233,15 @@
 				C313D9B225C1531600EBC805 /* UILabel+STAttributedString.m */,
 			);
 			path = UILabel;
+			sourceTree = "<group>";
+		};
+		C313D9C125C15FC700EBC805 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				C313D9C225C15FE200EBC805 /* UIButton+STKit.h */,
+				C313D9C325C15FE200EBC805 /* UIButton+STKit.m */,
+			);
+			path = UIButton;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -276,6 +290,7 @@
 			files = (
 				C313D9B325C1531600EBC805 /* UILabel+STAttributedString.h in Headers */,
 				C313D98F25C14CEA00EBC805 /* UILabel+STkit.h in Headers */,
+				C313D9C425C15FE200EBC805 /* UIButton+STKit.h in Headers */,
 				C8D77BE1334D7A217504D26711A64771 /* STPublic-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +431,7 @@
 				C313D99025C14CEA00EBC805 /* UILabel+STkit.m in Sources */,
 				95429CC3AC51DDCAFB4D1BE903EE3F27 /* ReplaceMe.m in Sources */,
 				C313D9B425C1531600EBC805 /* UILabel+STAttributedString.m in Sources */,
+				C313D9C525C15FE200EBC805 /* UIButton+STKit.m in Sources */,
 				7FAF212E2F6370A8746499789D8667D2 /* STPublic-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
