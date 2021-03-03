@@ -7,6 +7,5 @@ target 'STPublic_Example' do
 
   target 'STPublic_Tests' do
     inherit! :search_paths
-
   end
 end

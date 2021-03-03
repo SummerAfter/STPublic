@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "STPublic-Prefix.pch"
 @interface ViewController ()
 
 @end
