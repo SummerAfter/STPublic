@@ -9,17 +9,20 @@
 /* Begin PBXBuildFile section */
 		7FAF212E2F6370A8746499789D8667D2 /* STPublic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C59EE4E1304EFEA5EA08F47A4385FFBB /* STPublic-dummy.m */; };
 		84F52055C1EBBA395E8F45B6BAB3F388 /* Pods-STPublic_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 939C191D4DEBD3F26CF1814E16CB34FB /* Pods-STPublic_Tests-dummy.m */; };
-		95429CC3AC51DDCAFB4D1BE903EE3F27 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = B492D5334B3C9B9C3857A7C5AF4E5648 /* ReplaceMe.m */; };
 		A5F763EE19149A8E37F6D088D7691CAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		A69781363EE4C277E8A3143685E9194D /* Pods-STPublic_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7B510757A93FBD47BA00EE4EA8FAC49 /* Pods-STPublic_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4691EFB3D31131AB1E3C0B8C8438A28 /* Pods-STPublic_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76A1F86A2BD9FA8D6161452A54521046 /* Pods-STPublic_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B69C32D2BB16C78E97F2DE74F48FE201 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		C313D98F25C14CEA00EBC805 /* UILabel+STkit.h in Headers */ = {isa = PBXBuildFile; fileRef = C313D98D25C14CEA00EBC805 /* UILabel+STkit.h */; };
-		C313D99025C14CEA00EBC805 /* UILabel+STkit.m in Sources */ = {isa = PBXBuildFile; fileRef = C313D98E25C14CEA00EBC805 /* UILabel+STkit.m */; };
-		C313D9B325C1531600EBC805 /* UILabel+STAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = C313D9B125C1531600EBC805 /* UILabel+STAttributedString.h */; };
-		C313D9B425C1531600EBC805 /* UILabel+STAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = C313D9B225C1531600EBC805 /* UILabel+STAttributedString.m */; };
-		C313D9C425C15FE200EBC805 /* UIButton+STKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C313D9C225C15FE200EBC805 /* UIButton+STKit.h */; };
-		C313D9C525C15FE200EBC805 /* UIButton+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C313D9C325C15FE200EBC805 /* UIButton+STKit.m */; };
+		C32BBBEF25EF3E6200CE391E /* UIColor+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C32BBBE225EF3E6200CE391E /* UIColor+STKit.m */; };
+		C32BBBF025EF3E6200CE391E /* UIColor+STKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C32BBBE325EF3E6200CE391E /* UIColor+STKit.h */; };
+		C32BBBF125EF3E6200CE391E /* UIButton+STKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C32BBBE525EF3E6200CE391E /* UIButton+STKit.h */; };
+		C32BBBF225EF3E6200CE391E /* UIButton+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C32BBBE625EF3E6200CE391E /* UIButton+STKit.m */; };
+		C32BBBF325EF3E6200CE391E /* UIView+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C32BBBE825EF3E6200CE391E /* UIView+STKit.m */; };
+		C32BBBF425EF3E6200CE391E /* UIView+STKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C32BBBE925EF3E6200CE391E /* UIView+STKit.h */; };
+		C32BBBF525EF3E6200CE391E /* UILabel+STkit.m in Sources */ = {isa = PBXBuildFile; fileRef = C32BBBEB25EF3E6200CE391E /* UILabel+STkit.m */; };
+		C32BBBF625EF3E6200CE391E /* UILabel+STAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = C32BBBEC25EF3E6200CE391E /* UILabel+STAttributedString.m */; };
+		C32BBBF725EF3E6200CE391E /* UILabel+STkit.h in Headers */ = {isa = PBXBuildFile; fileRef = C32BBBED25EF3E6200CE391E /* UILabel+STkit.h */; };
+		C32BBBF825EF3E6200CE391E /* UILabel+STAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = C32BBBEE25EF3E6200CE391E /* UILabel+STAttributedString.h */; };
 		C8D77BE1334D7A217504D26711A64771 /* STPublic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 436710DEFBB85DA6EC6C2FD2B59D34C6 /* STPublic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA96CBB8E35E8FDA18686362E6CF028C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		EB1BE80480385373BFCAF7F3266BA227 /* Pods-STPublic_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC03615519F4EE0DDBFD84F281D56EC2 /* Pods-STPublic_Example-dummy.m */; };
@@ -64,13 +67,16 @@
 		A651F14D7979F8DEF350E707DCD834AB /* Pods-STPublic_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STPublic_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AC03615519F4EE0DDBFD84F281D56EC2 /* Pods-STPublic_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-STPublic_Example-dummy.m"; sourceTree = "<group>"; };
 		AC968DC3C24BB321B13BF3FB57410A00 /* STPublic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STPublic.release.xcconfig; sourceTree = "<group>"; };
-		B492D5334B3C9B9C3857A7C5AF4E5648 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = STPublic/Classes/ReplaceMe.m; sourceTree = "<group>"; };
-		C313D98D25C14CEA00EBC805 /* UILabel+STkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+STkit.h"; sourceTree = "<group>"; };
-		C313D98E25C14CEA00EBC805 /* UILabel+STkit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+STkit.m"; sourceTree = "<group>"; };
-		C313D9B125C1531600EBC805 /* UILabel+STAttributedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+STAttributedString.h"; sourceTree = "<group>"; };
-		C313D9B225C1531600EBC805 /* UILabel+STAttributedString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+STAttributedString.m"; sourceTree = "<group>"; };
-		C313D9C225C15FE200EBC805 /* UIButton+STKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+STKit.h"; sourceTree = "<group>"; };
-		C313D9C325C15FE200EBC805 /* UIButton+STKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+STKit.m"; sourceTree = "<group>"; };
+		C32BBBE225EF3E6200CE391E /* UIColor+STKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+STKit.m"; sourceTree = "<group>"; };
+		C32BBBE325EF3E6200CE391E /* UIColor+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+STKit.h"; sourceTree = "<group>"; };
+		C32BBBE525EF3E6200CE391E /* UIButton+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+STKit.h"; sourceTree = "<group>"; };
+		C32BBBE625EF3E6200CE391E /* UIButton+STKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+STKit.m"; sourceTree = "<group>"; };
+		C32BBBE825EF3E6200CE391E /* UIView+STKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+STKit.m"; sourceTree = "<group>"; };
+		C32BBBE925EF3E6200CE391E /* UIView+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+STKit.h"; sourceTree = "<group>"; };
+		C32BBBEB25EF3E6200CE391E /* UILabel+STkit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+STkit.m"; sourceTree = "<group>"; };
+		C32BBBEC25EF3E6200CE391E /* UILabel+STAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+STAttributedString.m"; sourceTree = "<group>"; };
+		C32BBBED25EF3E6200CE391E /* UILabel+STkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+STkit.h"; sourceTree = "<group>"; };
+		C32BBBEE25EF3E6200CE391E /* UILabel+STAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+STAttributedString.h"; sourceTree = "<group>"; };
 		C4E6F8C6C1FE1CAB3D5C40DFC1648B19 /* Pods-STPublic_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-STPublic_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C59EE4E1304EFEA5EA08F47A4385FFBB /* STPublic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STPublic-dummy.m"; sourceTree = "<group>"; };
 		C77D74C3D6124A3D47AB1DF09D59FEC7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -158,8 +164,7 @@
 		88FE457D45E914BF1B27E5D05B6769C5 /* STPublic */ = {
 			isa = PBXGroup;
 			children = (
-				B492D5334B3C9B9C3857A7C5AF4E5648 /* ReplaceMe.m */,
-				C313D98C25C14CC700EBC805 /* Classes */,
+				C32BBBE025EF3E4700CE391E /* STCategory */,
 				E21D68E77A33E4486C552F8096FAF493 /* Pod */,
 				AC7F1B2FC93D1464F778D9C6FCCBF869 /* Support Files */,
 			);
@@ -207,41 +212,53 @@
 			path = "Target Support Files/Pods-STPublic_Example";
 			sourceTree = "<group>";
 		};
-		C313D98C25C14CC700EBC805 /* Classes */ = {
+		C32BBBE025EF3E4700CE391E /* STCategory */ = {
 			isa = PBXGroup;
 			children = (
-				C313D9AF25C152EB00EBC805 /* STCategory */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		C313D9AF25C152EB00EBC805 /* STCategory */ = {
-			isa = PBXGroup;
-			children = (
-				C313D9C125C15FC700EBC805 /* UIButton */,
-				C313D9B025C152F800EBC805 /* UILabel */,
+				C32BBBE425EF3E6200CE391E /* UIButton */,
+				C32BBBE125EF3E6200CE391E /* UIColor */,
+				C32BBBEA25EF3E6200CE391E /* UILabel */,
+				C32BBBE725EF3E6200CE391E /* UIView */,
 			);
 			path = STCategory;
 			sourceTree = "<group>";
 		};
-		C313D9B025C152F800EBC805 /* UILabel */ = {
+		C32BBBE125EF3E6200CE391E /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
-				C313D98D25C14CEA00EBC805 /* UILabel+STkit.h */,
-				C313D98E25C14CEA00EBC805 /* UILabel+STkit.m */,
-				C313D9B125C1531600EBC805 /* UILabel+STAttributedString.h */,
-				C313D9B225C1531600EBC805 /* UILabel+STAttributedString.m */,
+				C32BBBE225EF3E6200CE391E /* UIColor+STKit.m */,
+				C32BBBE325EF3E6200CE391E /* UIColor+STKit.h */,
 			);
-			path = UILabel;
+			path = UIColor;
 			sourceTree = "<group>";
 		};
-		C313D9C125C15FC700EBC805 /* UIButton */ = {
+		C32BBBE425EF3E6200CE391E /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
-				C313D9C225C15FE200EBC805 /* UIButton+STKit.h */,
-				C313D9C325C15FE200EBC805 /* UIButton+STKit.m */,
+				C32BBBE525EF3E6200CE391E /* UIButton+STKit.h */,
+				C32BBBE625EF3E6200CE391E /* UIButton+STKit.m */,
 			);
 			path = UIButton;
+			sourceTree = "<group>";
+		};
+		C32BBBE725EF3E6200CE391E /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				C32BBBE825EF3E6200CE391E /* UIView+STKit.m */,
+				C32BBBE925EF3E6200CE391E /* UIView+STKit.h */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		C32BBBEA25EF3E6200CE391E /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				C32BBBEB25EF3E6200CE391E /* UILabel+STkit.m */,
+				C32BBBEC25EF3E6200CE391E /* UILabel+STAttributedString.m */,
+				C32BBBED25EF3E6200CE391E /* UILabel+STkit.h */,
+				C32BBBEE25EF3E6200CE391E /* UILabel+STAttributedString.h */,
+			);
+			path = UILabel;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -288,9 +305,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C313D9B325C1531600EBC805 /* UILabel+STAttributedString.h in Headers */,
-				C313D98F25C14CEA00EBC805 /* UILabel+STkit.h in Headers */,
-				C313D9C425C15FE200EBC805 /* UIButton+STKit.h in Headers */,
 				C8D77BE1334D7A217504D26711A64771 /* STPublic-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,7 +313,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C32BBBF025EF3E6200CE391E /* UIColor+STKit.h in Headers */,
+				C32BBBF125EF3E6200CE391E /* UIButton+STKit.h in Headers */,
 				A69781363EE4C277E8A3143685E9194D /* Pods-STPublic_Example-umbrella.h in Headers */,
+				C32BBBF825EF3E6200CE391E /* UILabel+STAttributedString.h in Headers */,
+				C32BBBF725EF3E6200CE391E /* UILabel+STkit.h in Headers */,
+				C32BBBF425EF3E6200CE391E /* UIView+STKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,10 +447,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C313D99025C14CEA00EBC805 /* UILabel+STkit.m in Sources */,
-				95429CC3AC51DDCAFB4D1BE903EE3F27 /* ReplaceMe.m in Sources */,
-				C313D9B425C1531600EBC805 /* UILabel+STAttributedString.m in Sources */,
-				C313D9C525C15FE200EBC805 /* UIButton+STKit.m in Sources */,
 				7FAF212E2F6370A8746499789D8667D2 /* STPublic-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,7 +455,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C32BBBF325EF3E6200CE391E /* UIView+STKit.m in Sources */,
 				EB1BE80480385373BFCAF7F3266BA227 /* Pods-STPublic_Example-dummy.m in Sources */,
+				C32BBBEF25EF3E6200CE391E /* UIColor+STKit.m in Sources */,
+				C32BBBF525EF3E6200CE391E /* UILabel+STkit.m in Sources */,
+				C32BBBF625EF3E6200CE391E /* UILabel+STAttributedString.m in Sources */,
+				C32BBBF225EF3E6200CE391E /* UIButton+STKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
