@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = STPublic;
+			productName = STPublic;
 		};
 /* End PBXAggregateTarget section */
 
@@ -23,6 +24,28 @@
 		A69781363EE4C277E8A3143685E9194D /* Pods-STPublic_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EE986A8C0D60C64F0B5FB0678B14C77 /* Pods-STPublic_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4691EFB3D31131AB1E3C0B8C8438A28 /* Pods-STPublic_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CFA30AF35170E159ABB32786A008815 /* Pods-STPublic_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B69C32D2BB16C78E97F2DE74F48FE201 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C336E44125F08C05002F005F /* UILabel+STkit.m in Sources */ = {isa = PBXBuildFile; fileRef = C336E42825F08C05002F005F /* UILabel+STkit.m */; };
+		C336E44225F08C05002F005F /* UILabel+AttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = C336E42925F08C05002F005F /* UILabel+AttributedString.h */; };
+		C336E44325F08C05002F005F /* UILabel+STkit.h in Headers */ = {isa = PBXBuildFile; fileRef = C336E42A25F08C05002F005F /* UILabel+STkit.h */; };
+		C336E44425F08C05002F005F /* UILabel+AttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = C336E42B25F08C05002F005F /* UILabel+AttributedString.m */; };
+		C336E44525F08C05002F005F /* UIButton+CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = C336E42D25F08C05002F005F /* UIButton+CountDown.m */; };
+		C336E44625F08C05002F005F /* UIButton+STKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C336E42E25F08C05002F005F /* UIButton+STKit.h */; };
+		C336E44725F08C05002F005F /* UIButton+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C336E42F25F08C05002F005F /* UIButton+STKit.m */; };
+		C336E44825F08C05002F005F /* UIButton+CountDown.h in Headers */ = {isa = PBXBuildFile; fileRef = C336E43025F08C05002F005F /* UIButton+CountDown.h */; };
+		C336E44925F08C05002F005F /* UIColor+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C336E43225F08C05002F005F /* UIColor+STKit.m */; };
+		C336E44A25F08C05002F005F /* UIColor+STKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C336E43325F08C05002F005F /* UIColor+STKit.h */; };
+		C336E44B25F08C05002F005F /* UIView+GestureCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = C336E43525F08C05002F005F /* UIView+GestureCallback.m */; };
+		C336E44C25F08C05002F005F /* UIView+Gradient.h in Headers */ = {isa = PBXBuildFile; fileRef = C336E43625F08C05002F005F /* UIView+Gradient.h */; };
+		C336E44D25F08C05002F005F /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = C336E43725F08C05002F005F /* UIView+Frame.m */; };
+		C336E44E25F08C05002F005F /* UIView+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C336E43825F08C05002F005F /* UIView+STKit.m */; };
+		C336E44F25F08C05002F005F /* UIView+Shadow.m in Sources */ = {isa = PBXBuildFile; fileRef = C336E43925F08C05002F005F /* UIView+Shadow.m */; };
+		C336E45025F08C05002F005F /* UIView+Corner.m in Sources */ = {isa = PBXBuildFile; fileRef = C336E43A25F08C05002F005F /* UIView+Corner.m */; };
+		C336E45125F08C05002F005F /* UIView+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = C336E43B25F08C05002F005F /* UIView+Gradient.m */; };
+		C336E45225F08C05002F005F /* UIView+GestureCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = C336E43C25F08C05002F005F /* UIView+GestureCallback.h */; };
+		C336E45325F08C05002F005F /* UIView+STKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C336E43D25F08C05002F005F /* UIView+STKit.h */; };
+		C336E45425F08C05002F005F /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = C336E43E25F08C05002F005F /* UIView+Frame.h */; };
+		C336E45525F08C05002F005F /* UIView+Corner.h in Headers */ = {isa = PBXBuildFile; fileRef = C336E43F25F08C05002F005F /* UIView+Corner.h */; };
+		C336E45625F08C05002F005F /* UIView+Shadow.h in Headers */ = {isa = PBXBuildFile; fileRef = C336E44025F08C05002F005F /* UIView+Shadow.h */; };
 		DA96CBB8E35E8FDA18686362E6CF028C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		EB1BE80480385373BFCAF7F3266BA227 /* Pods-STPublic_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56C6B015CF687EE653CDDED68ED0FE /* Pods-STPublic_Example-dummy.m */; };
 /* End PBXBuildFile section */
@@ -45,30 +68,52 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		030D11CBE1EA7E9F6331A1A347643C85 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		030D11CBE1EA7E9F6331A1A347643C85 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1165BE8730039182300C43C971342244 /* Pods-STPublic_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-STPublic_Tests-dummy.m"; sourceTree = "<group>"; };
 		15F630AFBDE1FB68BCC80C79FF4A098F /* Pods-STPublic_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STPublic_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1C1265EEF1B2518CC65F13FD21186832 /* Pods-STPublic_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-STPublic_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		233B5C4388CE309B9C07A412F732600E /* Pods-STPublic_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STPublic_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		23DB97E6C9B08683C8C5807DA49AC90D /* Pods-STPublic_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-STPublic_Tests.modulemap"; sourceTree = "<group>"; };
-		2941D66225CF0106C956D9186D6E9B20 /* STPublic.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = STPublic.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2941D66225CF0106C956D9186D6E9B20 /* STPublic.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = STPublic.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		487449F938AA788B08D036816B3E9C13 /* Pods-STPublic_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STPublic_Example-Info.plist"; sourceTree = "<group>"; };
 		5C0AEAC2C682D4C5F361D7EF9BA19B0F /* Pods-STPublic_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STPublic_Tests-Info.plist"; sourceTree = "<group>"; };
 		5F2BFC960AA006209D53330EDB3DF088 /* STPublic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STPublic.release.xcconfig; sourceTree = "<group>"; };
 		611AA8C5621799A41052803F65D921BE /* Pods-STPublic_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STPublic_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		62C4253801F90A0108EFA337E1B50D93 /* Pods_STPublic_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_STPublic_Tests.framework; path = "Pods-STPublic_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62C4253801F90A0108EFA337E1B50D93 /* Pods_STPublic_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STPublic_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6815BD9446434A4186AB4B6EC38703A3 /* Pods-STPublic_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-STPublic_Example.modulemap"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		78F2991CE6FC1CA57BB92109A5AE83EE /* Pods-STPublic_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-STPublic_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7D3D692A0FF9EF0B105807EDA890E582 /* STPublic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STPublic.debug.xcconfig; sourceTree = "<group>"; };
 		8CFA30AF35170E159ABB32786A008815 /* Pods-STPublic_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-STPublic_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EE986A8C0D60C64F0B5FB0678B14C77 /* Pods-STPublic_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-STPublic_Example-umbrella.h"; sourceTree = "<group>"; };
 		A08EBD8706DFA4C260E8769A0E07941D /* Pods-STPublic_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STPublic_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B9337876ACF4D6C6F32B7260B345AC0F /* Pods-STPublic_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STPublic_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C9B7DB01E387C95FA567C0CA1D79F744 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C336E42825F08C05002F005F /* UILabel+STkit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+STkit.m"; sourceTree = "<group>"; };
+		C336E42925F08C05002F005F /* UILabel+AttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AttributedString.h"; sourceTree = "<group>"; };
+		C336E42A25F08C05002F005F /* UILabel+STkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+STkit.h"; sourceTree = "<group>"; };
+		C336E42B25F08C05002F005F /* UILabel+AttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AttributedString.m"; sourceTree = "<group>"; };
+		C336E42D25F08C05002F005F /* UIButton+CountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CountDown.m"; sourceTree = "<group>"; };
+		C336E42E25F08C05002F005F /* UIButton+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+STKit.h"; sourceTree = "<group>"; };
+		C336E42F25F08C05002F005F /* UIButton+STKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+STKit.m"; sourceTree = "<group>"; };
+		C336E43025F08C05002F005F /* UIButton+CountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CountDown.h"; sourceTree = "<group>"; };
+		C336E43225F08C05002F005F /* UIColor+STKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+STKit.m"; sourceTree = "<group>"; };
+		C336E43325F08C05002F005F /* UIColor+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+STKit.h"; sourceTree = "<group>"; };
+		C336E43525F08C05002F005F /* UIView+GestureCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GestureCallback.m"; sourceTree = "<group>"; };
+		C336E43625F08C05002F005F /* UIView+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Gradient.h"; sourceTree = "<group>"; };
+		C336E43725F08C05002F005F /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		C336E43825F08C05002F005F /* UIView+STKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+STKit.m"; sourceTree = "<group>"; };
+		C336E43925F08C05002F005F /* UIView+Shadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shadow.m"; sourceTree = "<group>"; };
+		C336E43A25F08C05002F005F /* UIView+Corner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Corner.m"; sourceTree = "<group>"; };
+		C336E43B25F08C05002F005F /* UIView+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gradient.m"; sourceTree = "<group>"; };
+		C336E43C25F08C05002F005F /* UIView+GestureCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GestureCallback.h"; sourceTree = "<group>"; };
+		C336E43D25F08C05002F005F /* UIView+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+STKit.h"; sourceTree = "<group>"; };
+		C336E43E25F08C05002F005F /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		C336E43F25F08C05002F005F /* UIView+Corner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Corner.h"; sourceTree = "<group>"; };
+		C336E44025F08C05002F005F /* UIView+Shadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shadow.h"; sourceTree = "<group>"; };
+		C9B7DB01E387C95FA567C0CA1D79F744 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F01A066D60D03EDCD6F0FABEA3BB5059 /* Pods-STPublic_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STPublic_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F36E4576B2D529CFAB52A50C3730E1EF /* Pods_STPublic_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_STPublic_Example.framework; path = "Pods-STPublic_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F36E4576B2D529CFAB52A50C3730E1EF /* Pods_STPublic_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STPublic_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC56C6B015CF687EE653CDDED68ED0FE /* Pods-STPublic_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-STPublic_Example-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +149,7 @@
 		2F54A4A30D17C30BC76015E0A9D673FE /* STPublic */ = {
 			isa = PBXGroup;
 			children = (
+				C336E42625F08C05002F005F /* STCategory */,
 				4E477AA1862A28A6C24BEF03EEDC0FD4 /* Pod */,
 				6C9E17260B6E3F59E06419197F880004 /* Support Files */,
 			);
@@ -153,6 +199,68 @@
 			);
 			name = "Pods-STPublic_Example";
 			path = "Target Support Files/Pods-STPublic_Example";
+			sourceTree = "<group>";
+		};
+		C336E42625F08C05002F005F /* STCategory */ = {
+			isa = PBXGroup;
+			children = (
+				C336E42725F08C05002F005F /* UILabel */,
+				C336E42C25F08C05002F005F /* UIButton */,
+				C336E43125F08C05002F005F /* UIColor */,
+				C336E43425F08C05002F005F /* UIView */,
+			);
+			name = STCategory;
+			path = STPublic/Classes/STCategory;
+			sourceTree = "<group>";
+		};
+		C336E42725F08C05002F005F /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				C336E42825F08C05002F005F /* UILabel+STkit.m */,
+				C336E42925F08C05002F005F /* UILabel+AttributedString.h */,
+				C336E42A25F08C05002F005F /* UILabel+STkit.h */,
+				C336E42B25F08C05002F005F /* UILabel+AttributedString.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		C336E42C25F08C05002F005F /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				C336E42D25F08C05002F005F /* UIButton+CountDown.m */,
+				C336E42E25F08C05002F005F /* UIButton+STKit.h */,
+				C336E42F25F08C05002F005F /* UIButton+STKit.m */,
+				C336E43025F08C05002F005F /* UIButton+CountDown.h */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		C336E43125F08C05002F005F /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				C336E43225F08C05002F005F /* UIColor+STKit.m */,
+				C336E43325F08C05002F005F /* UIColor+STKit.h */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		C336E43425F08C05002F005F /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				C336E43525F08C05002F005F /* UIView+GestureCallback.m */,
+				C336E43625F08C05002F005F /* UIView+Gradient.h */,
+				C336E43725F08C05002F005F /* UIView+Frame.m */,
+				C336E43825F08C05002F005F /* UIView+STKit.m */,
+				C336E43925F08C05002F005F /* UIView+Shadow.m */,
+				C336E43A25F08C05002F005F /* UIView+Corner.m */,
+				C336E43B25F08C05002F005F /* UIView+Gradient.m */,
+				C336E43C25F08C05002F005F /* UIView+GestureCallback.h */,
+				C336E43D25F08C05002F005F /* UIView+STKit.h */,
+				C336E43E25F08C05002F005F /* UIView+Frame.h */,
+				C336E43F25F08C05002F005F /* UIView+Corner.h */,
+				C336E44025F08C05002F005F /* UIView+Shadow.h */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 		C4004B40749D89D5E4D1445025268737 /* Pods-STPublic_Tests */ = {
@@ -222,7 +330,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C336E44225F08C05002F005F /* UILabel+AttributedString.h in Headers */,
+				C336E44C25F08C05002F005F /* UIView+Gradient.h in Headers */,
+				C336E44325F08C05002F005F /* UILabel+STkit.h in Headers */,
+				C336E45425F08C05002F005F /* UIView+Frame.h in Headers */,
+				C336E44A25F08C05002F005F /* UIColor+STKit.h in Headers */,
+				C336E44825F08C05002F005F /* UIButton+CountDown.h in Headers */,
+				C336E44625F08C05002F005F /* UIButton+STKit.h in Headers */,
+				C336E45225F08C05002F005F /* UIView+GestureCallback.h in Headers */,
+				C336E45525F08C05002F005F /* UIView+Corner.h in Headers */,
 				A69781363EE4C277E8A3143685E9194D /* Pods-STPublic_Example-umbrella.h in Headers */,
+				C336E45325F08C05002F005F /* UIView+STKit.h in Headers */,
+				C336E45625F08C05002F005F /* UIView+Shadow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +445,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C336E44D25F08C05002F005F /* UIView+Frame.m in Sources */,
+				C336E44125F08C05002F005F /* UILabel+STkit.m in Sources */,
+				C336E44F25F08C05002F005F /* UIView+Shadow.m in Sources */,
+				C336E44525F08C05002F005F /* UIButton+CountDown.m in Sources */,
+				C336E44B25F08C05002F005F /* UIView+GestureCallback.m in Sources */,
 				EB1BE80480385373BFCAF7F3266BA227 /* Pods-STPublic_Example-dummy.m in Sources */,
+				C336E44725F08C05002F005F /* UIButton+STKit.m in Sources */,
+				C336E44E25F08C05002F005F /* UIView+STKit.m in Sources */,
+				C336E45025F08C05002F005F /* UIView+Corner.m in Sources */,
+				C336E44425F08C05002F005F /* UILabel+AttributedString.m in Sources */,
+				C336E45125F08C05002F005F /* UIView+Gradient.m in Sources */,
+				C336E44925F08C05002F005F /* UIColor+STKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
