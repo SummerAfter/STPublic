@@ -389,7 +389,6 @@
 		4355F02ED1CD2EC3179EF98205F2E6AF /* YYImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYImage-dummy.m"; sourceTree = "<group>"; };
 		4366AC198B6EE50C8AE367793C012233 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
 		44252F2A6FA0A5B509E03217D9B3D953 /* Pods-STPublic_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STPublic_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		44DCA15C22BFE56543CBCC16E0B53FF0 /* STPublic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STPublic.debug.xcconfig; sourceTree = "<group>"; };
 		44F9D3D3E704139401E813EAB13C05A8 /* STPublic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STPublic-prefix.pch"; sourceTree = "<group>"; };
 		4554A149622308352499209377DB8B6E /* SDImageGIFCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageGIFCoder.h; path = SDWebImage/Core/SDImageGIFCoder.h; sourceTree = "<group>"; };
 		45C12997EA78BE1CDBE40C3ED8B1AB4F /* SDImageTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageTransformer.m; path = SDWebImage/Core/SDImageTransformer.m; sourceTree = "<group>"; };
@@ -554,7 +553,6 @@
 		C97E567EF877D37C1AA229BF80E5E125 /* SDImageAPNGCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageAPNGCoder.m; path = SDWebImage/Core/SDImageAPNGCoder.m; sourceTree = "<group>"; };
 		CAE910572657BCEAD0897DDD85EA5D19 /* SDWebImageIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageIndicator.h; path = SDWebImage/Core/SDWebImageIndicator.h; sourceTree = "<group>"; };
 		CB440931ECF7C99F21FA2F8EE6BA77A6 /* SDWebImageCacheSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCacheSerializer.m; path = SDWebImage/Core/SDWebImageCacheSerializer.m; sourceTree = "<group>"; };
-		CCE474D2A04D75C88E26397EFDD53CD5 /* STPublic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STPublic.release.xcconfig; sourceTree = "<group>"; };
 		CF7728014B11B2A2A687C2B5DF5AE206 /* UIView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCache.h"; path = "SDWebImage/Core/UIView+WebCache.h"; sourceTree = "<group>"; };
 		CF9C498466FB52C1DB411BF580103601 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		D00399D62865C66FC40E81D1167D87AA /* SDAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImage.m; path = SDWebImage/Core/SDAnimatedImage.m; sourceTree = "<group>"; };
@@ -1234,8 +1232,6 @@
 				04606843DD498CDCF12C0476C37197E0 /* STPublic-Info.plist */,
 				44F9D3D3E704139401E813EAB13C05A8 /* STPublic-prefix.pch */,
 				8426FB6038E537650EA25DEE9EF26FF3 /* STPublic-umbrella.h */,
-				44DCA15C22BFE56543CBCC16E0B53FF0 /* STPublic.debug.xcconfig */,
-				CCE474D2A04D75C88E26397EFDD53CD5 /* STPublic.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/STPublic";
@@ -2375,7 +2371,6 @@
 		};
 		E2CFC9896F7E481001C9830B3DB237AD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCE474D2A04D75C88E26397EFDD53CD5 /* STPublic.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2445,7 +2440,6 @@
 		};
 		F4C58392D1FD680F4FDC697C0F5F8E6D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44DCA15C22BFE56543CBCC16E0B53FF0 /* STPublic.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
