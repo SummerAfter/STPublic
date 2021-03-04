@@ -46,6 +46,11 @@
 		C336E45425F08C05002F005F /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = C336E43E25F08C05002F005F /* UIView+Frame.h */; };
 		C336E45525F08C05002F005F /* UIView+Corner.h in Headers */ = {isa = PBXBuildFile; fileRef = C336E43F25F08C05002F005F /* UIView+Corner.h */; };
 		C336E45625F08C05002F005F /* UIView+Shadow.h in Headers */ = {isa = PBXBuildFile; fileRef = C336E44025F08C05002F005F /* UIView+Shadow.h */; };
+		C336E48D25F08E5C002F005F /* STPublic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C336E48725F08E5C002F005F /* STPublic-dummy.m */; };
+		C336E48E25F08E5C002F005F /* STPublic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C336E48825F08E5C002F005F /* STPublic-umbrella.h */; };
+		C336E48F25F08E5C002F005F /* STPublic-prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C336E48925F08E5C002F005F /* STPublic-prefix.pch */; };
+		C336E49025F08E5C002F005F /* STPublic-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C336E48A25F08E5C002F005F /* STPublic-Info.plist */; };
+		C336E49125F08E5C002F005F /* STPublic.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C336E48C25F08E5C002F005F /* STPublic.xcconfig */; };
 		DA96CBB8E35E8FDA18686362E6CF028C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		EB1BE80480385373BFCAF7F3266BA227 /* Pods-STPublic_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56C6B015CF687EE653CDDED68ED0FE /* Pods-STPublic_Example-dummy.m */; };
 /* End PBXBuildFile section */
@@ -111,6 +116,12 @@
 		C336E43E25F08C05002F005F /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		C336E43F25F08C05002F005F /* UIView+Corner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Corner.h"; sourceTree = "<group>"; };
 		C336E44025F08C05002F005F /* UIView+Shadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shadow.h"; sourceTree = "<group>"; };
+		C336E48725F08E5C002F005F /* STPublic-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "STPublic-dummy.m"; sourceTree = "<group>"; };
+		C336E48825F08E5C002F005F /* STPublic-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "STPublic-umbrella.h"; sourceTree = "<group>"; };
+		C336E48925F08E5C002F005F /* STPublic-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "STPublic-prefix.pch"; sourceTree = "<group>"; };
+		C336E48A25F08E5C002F005F /* STPublic-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "STPublic-Info.plist"; sourceTree = "<group>"; };
+		C336E48B25F08E5C002F005F /* STPublic.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = STPublic.modulemap; sourceTree = "<group>"; };
+		C336E48C25F08E5C002F005F /* STPublic.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = STPublic.xcconfig; sourceTree = "<group>"; };
 		C9B7DB01E387C95FA567C0CA1D79F744 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F01A066D60D03EDCD6F0FABEA3BB5059 /* Pods-STPublic_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STPublic_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F36E4576B2D529CFAB52A50C3730E1EF /* Pods_STPublic_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STPublic_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,6 +189,12 @@
 		6C9E17260B6E3F59E06419197F880004 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				C336E48725F08E5C002F005F /* STPublic-dummy.m */,
+				C336E48A25F08E5C002F005F /* STPublic-Info.plist */,
+				C336E48925F08E5C002F005F /* STPublic-prefix.pch */,
+				C336E48825F08E5C002F005F /* STPublic-umbrella.h */,
+				C336E48B25F08E5C002F005F /* STPublic.modulemap */,
+				C336E48C25F08E5C002F005F /* STPublic.xcconfig */,
 				7D3D692A0FF9EF0B105807EDA890E582 /* STPublic.debug.xcconfig */,
 				5F2BFC960AA006209D53330EDB3DF088 /* STPublic.release.xcconfig */,
 			);
@@ -331,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C336E44225F08C05002F005F /* UILabel+AttributedString.h in Headers */,
+				C336E48F25F08E5C002F005F /* STPublic-prefix.pch in Headers */,
 				C336E44C25F08C05002F005F /* UIView+Gradient.h in Headers */,
 				C336E44325F08C05002F005F /* UILabel+STkit.h in Headers */,
 				C336E45425F08C05002F005F /* UIView+Frame.h in Headers */,
@@ -338,6 +356,7 @@
 				C336E44825F08C05002F005F /* UIButton+CountDown.h in Headers */,
 				C336E44625F08C05002F005F /* UIButton+STKit.h in Headers */,
 				C336E45225F08C05002F005F /* UIView+GestureCallback.h in Headers */,
+				C336E48E25F08E5C002F005F /* STPublic-umbrella.h in Headers */,
 				C336E45525F08C05002F005F /* UIView+Corner.h in Headers */,
 				A69781363EE4C277E8A3143685E9194D /* Pods-STPublic_Example-umbrella.h in Headers */,
 				C336E45325F08C05002F005F /* UIView+STKit.h in Headers */,
@@ -420,6 +439,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C336E49125F08E5C002F005F /* STPublic.xcconfig in Resources */,
+				C336E49025F08E5C002F005F /* STPublic-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C336E48D25F08E5C002F005F /* STPublic-dummy.m in Sources */,
 				C336E44D25F08C05002F005F /* UIView+Frame.m in Sources */,
 				C336E44125F08C05002F005F /* UILabel+STkit.m in Sources */,
 				C336E44F25F08C05002F005F /* UIView+Shadow.m in Sources */,
