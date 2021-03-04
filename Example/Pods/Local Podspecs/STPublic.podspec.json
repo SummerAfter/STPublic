@@ -18,16 +18,5 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "STPublic/Classes/**/*",
-  "dependencies": {
-    "YYModel": [
-
-    ],
-    "SDWebImage": [
-      "5.8.4"
-    ],
-    "AFNetworking": [
-      "4.0.1"
-    ]
-  }
+  "source_files": "STPublic/Classes/**/*"
 }
