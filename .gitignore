@@ -1,5 +1,0 @@
-忽略文件内容如下 
-*.xcworkspace 
-xcuserdata 
-*.lock 
-Pods
