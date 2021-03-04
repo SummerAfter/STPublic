@@ -28,7 +28,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'STPublic/Classes/**/*'
-  
+  s.dependency 'YYModel'
+  s.dependency 'SDWebImage' ,'5.8.4'
+  s.dependency 'AFNetworking' ,'4.0.1'
+
   # s.resource_bundles = {
   #   'STPublic' => ['STPublic/Assets/*.png']
   # }
