@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param font 字体
 /// @param textColor 颜色
 /// @param alignment 对齐方式
-+ (instancetype)labelWithfont: (UIFont *)font textColor:(UIColor *)textColor alignment:(NSTextAlignment)alignment;
++ (instancetype)labelWithfont:(UIFont *)font textColor:(UIColor *)textColor alignment:(NSTextAlignment)alignment;
 
 
 @end
