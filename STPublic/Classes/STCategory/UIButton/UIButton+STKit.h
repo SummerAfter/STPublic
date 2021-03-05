@@ -47,6 +47,19 @@ typedef NS_ENUM(NSInteger, STImagePosition) {
  */
 - (void)st_setImagePosition:(STImagePosition)postion spacing:(CGFloat)spacing;
 
+- (void)st_setImageURL:(NSString *)imageURL placeholderImage:(UIImage *)placeholderImage;
+
+- (void)st_setImageURL:(NSString *)imageURL placeholderColor:(UIColor *)placeholderColor;
+
+- (void)st_setRealImageURL:(NSString *)imageURL placeholderImage:(UIImage *)placeholderImage;
+
+- (void)st_setRealImageURL:(NSString *)imageURL placeholderColor:(UIColor *)placeholderColor;
+
+- (void)st_setImageURL:(NSString *)imageURL;
+
+- (void)st_setRealImageURL:(NSString *)imageURL;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

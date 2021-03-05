@@ -7,6 +7,8 @@
 
 #import "UIButton+STKit.h"
 #import <objc/runtime.h>
+#import <SDWebImage/UIButton+WebCache.h>
+#import "UIImage+STKit.h"
 
 static char btnBlockKey ;
 static char forbiddenTimeKey;
@@ -85,6 +87,53 @@ static NSString *const kButtonTextObjectKey = @"buttonTextObject";
     }
     
 }
+
+- (void)st_setImageURL:(NSString *)imageURL placeholderImage:(UIImage *)placeholderImage {
+    if (!imageURL) {
+        return;
+    }
+    [self sd_setBackgroundImageWithURL:[NSURL URLWithString:imageURL] forState:UIControlStateNormal placeholderImage:placeholderImage];
+}
+
+
+- (void)st_setImageURL:(NSString *)imageURL placeholderColor:(UIColor *)placeholderColor {
+    if (!imageURL) {
+        return;
+    }
+    UIImage *img = [UIImage imageWithColor:placeholderColor];
+    [self st_setImageURL:imageURL placeholderImage:img];
+
+}
+
+
+- (void)st_setRealImageURL:(NSString *)imageURL placeholderImage:(UIImage *)placeholderImage {
+    self.clipsToBounds = YES;
+    if (!imageURL) {
+        return;
+    }
+    [self sd_setImageWithURL:[NSURL URLWithString:imageURL] forState:UIControlStateNormal placeholderImage:placeholderImage];
+}
+
+
+- (void)st_setRealImageURL:(NSString *)imageURL placeholderColor:(UIColor *)placeholderColor {
+    if (!imageURL) {
+        return;
+    }
+    UIImage *img = [UIImage imageWithColor:placeholderColor];
+    [self st_setRealImageURL:imageURL placeholderImage:img];
+}
+
+
+- (void)st_setImageURL:(NSString *)imageURL {
+    UIColor *placeholder = [UIColor colorWithRed:(241)/255.0f green:(241)/255.0f blue:241/255.0f alpha:1];
+    [self st_setImageURL:imageURL placeholderColor:placeholder];
+}
+
+- (void)st_setRealImageURL:(NSString *)imageURL {
+    UIColor *placeholder = [UIColor colorWithRed:(241)/255.0f green:(241)/255.0f blue:241/255.0f alpha:1];
+    [self st_setRealImageURL:imageURL placeholderColor:placeholder];
+}
+
 #pragma mark - Privite
 
 - (void)btnEnable:(NSTimer *)timer {
@@ -178,5 +227,6 @@ static NSString *const kButtonTextObjectKey = @"buttonTextObject";
     NSValue *value = [NSValue valueWithUIEdgeInsets:touchAreaInsets];
     objc_setAssociatedObject(self, @selector(touchAreaInsets), value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
+
 
 @end

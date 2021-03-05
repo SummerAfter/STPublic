@@ -28,12 +28,12 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.dependency 'AFNetworking' ,'4.0.1'
-  s.dependency 'SDWebImage' ,'5.8.4'
   s.dependency 'YYImage'
   s.dependency 'YYModel'
   
   s.subspec 'STCategory' do |c|
       c.source_files = 'STPublic/Classes/STCategory/**/*.{h,m}'
+      c.dependency 'SDWebImage' ,'5.8.4'
   end
 
   # s.resource_bundles = {

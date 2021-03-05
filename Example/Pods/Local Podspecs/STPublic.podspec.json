@@ -18,13 +18,9 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "STPublic/Classes/**/*",
   "dependencies": {
     "AFNetworking": [
       "4.0.1"
-    ],
-    "SDWebImage": [
-      "5.8.4"
     ],
     "YYImage": [
 
@@ -36,7 +32,12 @@
   "subspecs": [
     {
       "name": "STCategory",
-      "source_files": "STPublic/Classes/STCategory/**/*.{h,m}"
+      "source_files": "STPublic/Classes/STCategory/**/*.{h,m}",
+      "dependencies": {
+        "SDWebImage": [
+          "5.8.4"
+        ]
+      }
     }
   ]
 }
