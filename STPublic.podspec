@@ -26,7 +26,6 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-
   s.dependency 'AFNetworking' ,'4.0.1'
   s.dependency 'YYImage'
   s.dependency 'YYModel'
@@ -34,6 +33,7 @@ Pod::Spec.new do |s|
   s.subspec 'STCategory' do |c|
       c.source_files = 'STPublic/Classes/STCategory/**/*.{h,m}'
       c.dependency 'SDWebImage' ,'5.8.4'
+      c.dependency 'YYText'
   end
 
   # s.resource_bundles = {
