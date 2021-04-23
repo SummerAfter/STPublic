@@ -198,9 +198,7 @@
 		C13BE2F7058C4B2DB6A52FFFD651394C /* UIImage+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = DA037D3694B32959D415A646B413098E /* UIImage+Transform.m */; };
 		C2932038ECAC0C7FD0B1B5D5E19DE4A9 /* SDWebImageDownloaderResponseModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCE0F62CB2996793AEE7637D52268C0 /* SDWebImageDownloaderResponseModifier.m */; };
 		C336E77C25F0E5F6002F005F /* UIImage+STKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C336E77825F0E5F6002F005F /* UIImage+STKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C336E77D25F0E5F6002F005F /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C336E77925F0E5F6002F005F /* UIImage+GIF.m */; };
 		C336E77E25F0E5F6002F005F /* UIImage+STKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C336E77A25F0E5F6002F005F /* UIImage+STKit.m */; };
-		C336E77F25F0E5F6002F005F /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = C336E77B25F0E5F6002F005F /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4A9314F108D03AD481BC589F1DA4477 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66EF1E9A5AF01F2546E39337264AFBA /* Foundation.framework */; };
 		C6B18C54AF037EFF6980D1DA72CD8F1C /* SDImageCachesManagerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 950F6B90479CEFCB8896CD835052A809 /* SDImageCachesManagerOperation.m */; };
 		C854CD2F89E00E88FB1D6669A770DEE0 /* SDWebImageDownloaderDecryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = E44C57C23FB2D79A04ED5A2BF77F7367 /* SDWebImageDownloaderDecryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -549,9 +547,7 @@
 		C2E06446E87F43388D32866BDB87777C /* UIView+Gradient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gradient.m"; sourceTree = "<group>"; };
 		C2F59492805305BE930C51A9DF6B2D18 /* UIView+Gradient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Gradient.h"; sourceTree = "<group>"; };
 		C336E77825F0E5F6002F005F /* UIImage+STKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+STKit.h"; sourceTree = "<group>"; };
-		C336E77925F0E5F6002F005F /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
 		C336E77A25F0E5F6002F005F /* UIImage+STKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+STKit.m"; sourceTree = "<group>"; };
-		C336E77B25F0E5F6002F005F /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
 		C343503F2476A28AD756CD6B6A4FD675 /* UILabel+AttributedString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UILabel+AttributedString.h"; sourceTree = "<group>"; };
 		C48B549242C537136A25ADDB6E8F3E59 /* SDFileAttributeHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDFileAttributeHelper.h; path = SDWebImage/Private/SDFileAttributeHelper.h; sourceTree = "<group>"; };
 		C4E6F8C6C1FE1CAB3D5C40DFC1648B19 /* Pods-STPublic_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-STPublic_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -1140,8 +1136,6 @@
 			children = (
 				C336E77825F0E5F6002F005F /* UIImage+STKit.h */,
 				C336E77A25F0E5F6002F005F /* UIImage+STKit.m */,
-				C336E77B25F0E5F6002F005F /* UIImage+GIF.h */,
-				C336E77925F0E5F6002F005F /* UIImage+GIF.m */,
 			);
 			name = UIImage;
 			path = STPublic/Classes/STCategory/UIImage;
@@ -1427,7 +1421,6 @@
 				862FBBC8C756A020F2795E7CBFB0B2ED /* UIView+Frame.h in Headers */,
 				A4C87983C108422B5F85056769227CC8 /* UIView+GestureCallback.h in Headers */,
 				73F52EFDC4F50FDA72076880564ABD4F /* UIView+Gradient.h in Headers */,
-				C336E77F25F0E5F6002F005F /* UIImage+GIF.h in Headers */,
 				A12752CE86148B9672E168C7499C18CC /* UIView+Shadow.h in Headers */,
 				85017A90F245CC9CD4BC88D746456236 /* UIView+STKit.h in Headers */,
 			);
@@ -1790,7 +1783,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C336E77D25F0E5F6002F005F /* UIImage+GIF.m in Sources */,
 				ADC12365A9BB9B2FF838C303E188189D /* STPublic-dummy.m in Sources */,
 				D783304F0BCE34CCE869E33C1AAE963E /* UIButton+CountDown.m in Sources */,
 				F965949F4949CC449300C0807B987A0C /* UIButton+STKit.m in Sources */,

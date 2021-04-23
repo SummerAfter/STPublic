@@ -66,4 +66,5 @@
     [scanner scanHexInt:&rgba];
     return [UIColor rgba:rgba];
 }
+
 @end

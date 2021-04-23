@@ -45,7 +45,7 @@
     return img;
 }
 
-+ (UIImage *)st_animatedGIFNamed:(NSString *)name {
++ (UIImage *)animatedGIFNamed:(NSString *)name {
     if (!name) {
         return nil;
     }
@@ -54,25 +54,25 @@
         NSString *retinaPath = [[NSBundle mainBundle] pathForResource:[name stringByAppendingString:@"@2x"] ofType:@"gif"];
         NSData *data = [NSData dataWithContentsOfFile:retinaPath];
         if (data) {
-            return [UIImage st_imageWithGIFData:data];
+            return [UIImage imageWithGIFData:data];
         }
         NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"gif"];
         data = [NSData dataWithContentsOfFile:path];
         if (data) {
-            return [UIImage st_imageWithGIFData:data];
+            return [UIImage imageWithGIFData:data];
         }
         return [UIImage imageNamed:name];
     } else {
         NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"gif"];
         NSData *data = [NSData dataWithContentsOfFile:path];
         if (data) {
-            return [UIImage st_imageWithGIFData:data];
+            return [UIImage imageWithGIFData:data];
         }
         return [UIImage imageNamed:name];
     }
 }
 
-+ (UIImage *)st_imageWithGIFData:(NSData *)data {
++ (UIImage *)imageWithGIFData:(NSData *)data {
     return [UIImage sd_imageWithGIFData:data];
 }
 

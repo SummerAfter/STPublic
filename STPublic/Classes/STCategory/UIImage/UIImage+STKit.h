@@ -57,17 +57,18 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  使用图片名称 从本地 mainBundle 中加载 gif 图片
  */
-+ (UIImage *)st_animatedGIFNamed:(NSString *)name;
++ (UIImage *)animatedGIFNamed:(NSString *)name;
 
 /**
  将 gif 图片 data 转换为 UIImage
  */
-+ (UIImage *)st_imageWithGIFData:(NSData *)data;
++ (UIImage *)imageWithGIFData:(NSData *)data;
 
 /**
  是否 gif
  */
 - (BOOL)isGIF;
+
 @end
 
 NS_ASSUME_NONNULL_END

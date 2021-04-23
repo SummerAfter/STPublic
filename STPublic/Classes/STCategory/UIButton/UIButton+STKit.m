@@ -33,6 +33,7 @@ static NSString *const kButtonTextObjectKey = @"buttonTextObject";
     [button addTarget:button action:@selector(actionTouched:) forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
+
 - (instancetype)initWithImgage:(NSString *)image Block:(TouchedBlock)block {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     if (image) {
@@ -43,11 +44,9 @@ static NSString *const kButtonTextObjectKey = @"buttonTextObject";
     return button;
 }
 
-#pragma mark - Override
-
 #pragma mark - Public
 
-- (void)st_setImagePosition:(STImagePosition)postion spacing:(CGFloat)spacing {
+- (void)setImagePosition:(STImagePosition)postion spacing:(CGFloat)spacing {
     CGFloat imageWith = self.imageView.image.size.width;
     CGFloat imageHeight = self.imageView.image.size.height;
 #pragma clang diagnostic push
@@ -55,7 +54,6 @@ static NSString *const kButtonTextObjectKey = @"buttonTextObject";
     CGFloat labelWidth = [self.titleLabel.text sizeWithFont:self.titleLabel.font].width;
     CGFloat labelHeight = [self.titleLabel.text sizeWithFont:self.titleLabel.font].height;
 #pragma clang diagnostic pop
-    
     CGFloat imageOffsetX = (imageWith + labelWidth) / 2 - imageWith / 2;//image中心移动的x距离
     CGFloat imageOffsetY = imageHeight / 2 + spacing / 2;//image中心移动的y距离
     CGFloat labelOffsetX = (imageWith + labelWidth / 2) - (imageWith + labelWidth) / 2;//label中心移动的x距离
@@ -88,25 +86,23 @@ static NSString *const kButtonTextObjectKey = @"buttonTextObject";
     
 }
 
-- (void)st_setImageURL:(NSString *)imageURL placeholderImage:(UIImage *)placeholderImage {
+- (void)setImageURL:(NSString *)imageURL placeholderImage:(UIImage *)placeholderImage {
     if (!imageURL) {
         return;
     }
     [self sd_setBackgroundImageWithURL:[NSURL URLWithString:imageURL] forState:UIControlStateNormal placeholderImage:placeholderImage];
 }
 
-
-- (void)st_setImageURL:(NSString *)imageURL placeholderColor:(UIColor *)placeholderColor {
+- (void)setImageURL:(NSString *)imageURL placeholderColor:(UIColor *)placeholderColor {
     if (!imageURL) {
         return;
     }
     UIImage *img = [UIImage imageWithColor:placeholderColor];
-    [self st_setImageURL:imageURL placeholderImage:img];
+    [self setImageURL:imageURL placeholderImage:img];
 
 }
 
-
-- (void)st_setRealImageURL:(NSString *)imageURL placeholderImage:(UIImage *)placeholderImage {
+- (void)setRealImageURL:(NSString *)imageURL placeholderImage:(UIImage *)placeholderImage {
     self.clipsToBounds = YES;
     if (!imageURL) {
         return;
@@ -114,24 +110,9 @@ static NSString *const kButtonTextObjectKey = @"buttonTextObject";
     [self sd_setImageWithURL:[NSURL URLWithString:imageURL] forState:UIControlStateNormal placeholderImage:placeholderImage];
 }
 
-
-- (void)st_setRealImageURL:(NSString *)imageURL placeholderColor:(UIColor *)placeholderColor {
-    if (!imageURL) {
-        return;
-    }
-    UIImage *img = [UIImage imageWithColor:placeholderColor];
-    [self st_setRealImageURL:imageURL placeholderImage:img];
-}
-
-
-- (void)st_setImageURL:(NSString *)imageURL {
+- (void)setImageURL:(NSString *)imageURL {
     UIColor *placeholder = [UIColor colorWithRed:(241)/255.0f green:(241)/255.0f blue:241/255.0f alpha:1];
-    [self st_setImageURL:imageURL placeholderColor:placeholder];
-}
-
-- (void)st_setRealImageURL:(NSString *)imageURL {
-    UIColor *placeholder = [UIColor colorWithRed:(241)/255.0f green:(241)/255.0f blue:241/255.0f alpha:1];
-    [self st_setRealImageURL:imageURL placeholderColor:placeholder];
+    [self setImageURL:imageURL placeholderColor:placeholder];
 }
 
 #pragma mark - Privite
@@ -152,10 +133,6 @@ static NSString *const kButtonTextObjectKey = @"buttonTextObject";
     return CGRectContainsPoint(bounds, point);
 }
 
-#pragma mark - Network
-
-#pragma mark - Notifaction
-
 #pragma mark - Event Response
 
 // 点击事件
@@ -171,7 +148,6 @@ static NSString *const kButtonTextObjectKey = @"buttonTextObject";
         block(btn.tag);
     }
 }
-#pragma mark - Delegate
 
 #pragma mark - Getter & Setter
 

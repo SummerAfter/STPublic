@@ -33,6 +33,6 @@
         }
     });
     dispatch_resume(_timer);
-    
 }
+
 @end

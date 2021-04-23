@@ -45,19 +45,13 @@ typedef NS_ENUM(NSInteger, STImagePosition) {
  *  注意：这个方法需要在设置图片和文字之后才可以调用，且button的大小要大于 图片大小+文字大小+spacing
  *  @param spacing 图片和文字的间隔
  */
-- (void)st_setImagePosition:(STImagePosition)postion spacing:(CGFloat)spacing;
+- (void)setImagePosition:(STImagePosition)postion spacing:(CGFloat)spacing;
 
-- (void)st_setImageURL:(NSString *)imageURL placeholderImage:(UIImage *)placeholderImage;
+- (void)setImageURL:(NSString *)imageURL placeholderImage:(UIImage *)placeholderImage;
 
-- (void)st_setImageURL:(NSString *)imageURL placeholderColor:(UIColor *)placeholderColor;
+- (void)setImageURL:(NSString *)imageURL placeholderColor:(UIColor *)placeholderColor;
 
-- (void)st_setRealImageURL:(NSString *)imageURL placeholderImage:(UIImage *)placeholderImage;
-
-- (void)st_setRealImageURL:(NSString *)imageURL placeholderColor:(UIColor *)placeholderColor;
-
-- (void)st_setImageURL:(NSString *)imageURL;
-
-- (void)st_setRealImageURL:(NSString *)imageURL;
+- (void)setImageURL:(NSString *)imageURL;
 
 
 @end
