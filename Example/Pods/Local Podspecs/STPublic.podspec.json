@@ -33,6 +33,9 @@
     ],
     "AFNetworking": [
 
+    ],
+    "CocoaLumberjack": [
+
     ]
   },
   "subspecs": [
@@ -43,6 +46,10 @@
     {
       "name": "STNetworking",
       "source_files": "STPublic/Classes/STNetworking/**/*.{h,m}"
+    },
+    {
+      "name": "STUtils",
+      "source_files": "STPublic/Classes/STUtils/**/*.{h,m}"
     }
   ]
 }

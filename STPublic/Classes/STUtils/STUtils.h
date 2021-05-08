@@ -9,5 +9,6 @@
 #define STUtils_h
 
 #import "STMacro.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 #endif /* STUtils_h */

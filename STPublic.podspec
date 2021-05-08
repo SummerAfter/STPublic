@@ -32,17 +32,18 @@ Pod::Spec.new do |s|
   s.dependency 'SDWebImage' ,'5.8.4'
   s.dependency 'AFNetworking'
   s.dependency 'CocoaLumberjack'
+  s.dependency 'YYCache'
 
-  s.subspec 'STCategory' do |c|
-      c.source_files = 'STPublic/Classes/STCategory/**/*.{h,m}'
+  s.subspec 'STCategory' do |a|
+      a.source_files = 'STPublic/Classes/STCategory/**/*.{h,m}'
   end
   
-  s.subspec 'STNetworking' do |a|
-      a.source_files = 'STPublic/Classes/STNetworking/**/*.{h,m}'
+  s.subspec 'STNetworking' do |b|
+      b.source_files = 'STPublic/Classes/STNetworking/**/*.{h,m}'
   end
   
-  s.subspec 'STUtils' do |b|
-      b.source_files = 'STPublic/Classes/STUtils/**/*.{h,m}'
+  s.subspec 'STUtils' do |c|
+      c.source_files = 'STPublic/Classes/STUtils/**/*.{h,m}'
   end
 
   # s.resource_bundles = {
