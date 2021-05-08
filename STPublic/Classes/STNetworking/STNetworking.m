@@ -11,6 +11,10 @@
 #import "NSDictionary+STKit.h"
 #import "STUtils.h"
 #import <YYCache/YYDiskCache.h>
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+
+
 
 static const NSInteger kDefaultCacheMaxCacheCount = 1024 * 1024 * 5; // 5 M
 
@@ -50,8 +54,6 @@ static const NSInteger kDefaultCacheMaxCacheCount = 1024 * 1024 * 5; // 5 M
             DDLogWarn(@"parameter:%@ \n", parameter);
         }
     }
-
-    //    NSLog(@"head= %@",manager.requestSerializer.HTTPRequestHeaders);
 
     // fix: nw_read_request_report [C3] Receive failed with error "Software caused connection abort"
     // 后台挂起时，还未返回数据的api，系统会终止接收respose header ，待恢复时，系统会重新发起原来的request，导致线上401错误，auth_key_used
@@ -146,13 +148,13 @@ static const NSInteger kDefaultCacheMaxCacheCount = 1024 * 1024 * 5; // 5 M
             response.actuallyURL = changeURL;
             response.responseTime = [[NSDate date] timeIntervalSince1970] - startTime;
             response.parameter = parameter;
-            response.status = kHBResponseStatusFailure;
+            response.status = kSTResponseStatusFailure;
 
             NSString *errorStr = [NSString stringWithFormat:@"Error responseTime:%f  url: %@ \n res: %@ \r\n  ", response.responseTime, [resp.URL absoluteString], response.responseString];
             DDLogError(@"%@", errorStr);
 
             //扩展里 具体处理 kHBResponseStatusFailure  接口失败上报
-            [XHBNetworking responseStatusHandle:response];
+            [self.class responseStatusHandle:response];
 
             if (failBlock) {
                 failBlock(response);
@@ -301,7 +303,7 @@ static const NSInteger kDefaultCacheMaxCacheCount = 1024 * 1024 * 5; // 5 M
  对服务端返回的 response_status 状态 做相应的统一处理
  @return 是否需要回调 对应的 block  YES success NO fail
  */
-+ (BOOL)responseStatusHandle:(XHBHTTPResponse *)response {
++ (BOOL)responseStatusHandle:(STHttpResponse *)response {
     // 默认 需要回调
     return YES;
 }

@@ -10,6 +10,9 @@
 #endif
 #endif
 
+#import "NSData+STKit.h"
+#import "NSDictionary+STKit.h"
+#import "NSString+STKit.h"
 #import "UIButton+CountDown.h"
 #import "UIButton+STKit.h"
 #import "UIColor+STKit.h"

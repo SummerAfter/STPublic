@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.dependency 'YYText'
   s.dependency 'SDWebImage' ,'5.8.4'
   s.dependency 'AFNetworking'
-  s.dependency 'CocoaLumberjack'
+  s.dependency 'CocoaLumberjack','3.5.2'
   s.dependency 'YYCache'
 
   s.subspec 'STCategory' do |a|
@@ -46,11 +46,4 @@ Pod::Spec.new do |s|
       c.source_files = 'STPublic/Classes/STUtils/**/*.{h,m}'
   end
 
-  # s.resource_bundles = {
-  #   'STPublic' => ['STPublic/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
