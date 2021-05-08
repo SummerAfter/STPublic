@@ -20,8 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 // 防止null时 调用发生闪退
 - (nullable NSDictionary *)getDictionaryForKeyNoNull:(NSString *_Nullable)aKey;
 
-// 安全添加 键值对
-- (void)setObjectSafe:(id _Nullable)anObject forKeySafe:(NSString *_Nullable)aKey;
 
 @end
 

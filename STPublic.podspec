@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.dependency 'YYText'
   s.dependency 'SDWebImage' ,'5.8.4'
   s.dependency 'AFNetworking'
-  s.dependency 'CocoaLumberjack','3.5.2'
+  s.dependency 'CocoaLumberjack'
   s.dependency 'YYCache'
 
   s.subspec 'STCategory' do |a|

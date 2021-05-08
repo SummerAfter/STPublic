@@ -11,10 +11,6 @@
 #import "NSDictionary+STKit.h"
 #import "STUtils.h"
 #import <YYCache/YYDiskCache.h>
-#import <CocoaLumberjack/CocoaLumberjack.h>
-
-
-
 
 static const NSInteger kDefaultCacheMaxCacheCount = 1024 * 1024 * 5; // 5 M
 
@@ -32,17 +28,17 @@ static const NSInteger kDefaultCacheMaxCacheCount = 1024 * 1024 * 5; // 5 M
     STAFManager *manager = [STAFManager defaultNetManager];
     
     //确保 每次请求的 url 和 header 参数值唯一 线程锁
-    HB_LOCK(manager.reqGWLock);
+    ST_LOCK(manager.reqGWLock);
     NSTimeInterval startTime = [[NSDate date] timeIntervalSince1970];
     NSString *changeURL = [self.class changeURL:url];
     if ([NSString isEmpty:changeURL]) {
-        HB_UNLOCK(manager.reqGWLock);
+        ST_UNLOCK(manager.reqGWLock);
         return nil;
     }
     //添加一大串公用的头信息 和 添加自定义认证头信息
     NSDictionary *headers = [self.class getHeadersPerUrl:url parameterDic:parameter];
     //确保 每次请求的 url 和 header 参数值唯一  线程锁
-    HB_UNLOCK(manager.reqGWLock);
+    ST_UNLOCK(manager.reqGWLock);
     
     if (kHBHTTPGet == method) {
         DDLogWarn(@"\n发送GET请求 url: %@ \r\n", changeURL);
@@ -125,6 +121,14 @@ static const NSInteger kDefaultCacheMaxCacheCount = 1024 * 1024 * 5; // 5 M
                 [manager.recursiveLock lock];
                 [manager.taksDic removeObjectForKey:url];
                 [manager.recursiveLock unlock];
+                
+            }  else {
+                response.status = kSTResponseStatusJsonError;
+                //扩展里 kHBResponseStatusJsonError 上报
+                [self.class responseStatusHandle:response];
+                NSString *errorStr = [NSString stringWithFormat:@"Error Json Invaild responseTime:%f \r\n  url: %@ \r\n  res: %@ ", response.responseTime, [resp.URL absoluteString], response.responseString];
+                DDLogError(@"%@", errorStr);
+                failBlock(response);
             }
         
             if (bgTaskId != UIBackgroundTaskInvalid) {
@@ -198,12 +202,12 @@ static const NSInteger kDefaultCacheMaxCacheCount = 1024 * 1024 * 5; // 5 M
     return [self.class requestAddingWithURL:url
         method:method
         parameterDic:parameter
-        successBlock:^(XHBHTTPResponse *response) {
+        successBlock:^(STHttpResponse *response) {
             if (successBlock) {
                 successBlock(response);
             }
         }
-        failureBlock:^(XHBHTTPResponse *response) {
+        failureBlock:^(STHttpResponse *response) {
             if (failBlock) {
                 failBlock(response);
             }
@@ -214,19 +218,18 @@ static const NSInteger kDefaultCacheMaxCacheCount = 1024 * 1024 * 5; // 5 M
     return [self.class requestWithURL:url
         method:method
         parameterDic:parameter
-        successBlock:^(XHBHTTPResponse *response) {
+        successBlock:^(STHttpResponse *response) {
             if (delegate && [delegate respondsToSelector:@selector(networkFinishLoad:)]) {
                 [delegate networkFinishLoad:response];
             }
         }
-        failureBlock:^(XHBHTTPResponse *response) {
+        failureBlock:^(STHttpResponse *response) {
             if (delegate && [delegate respondsToSelector:@selector(networkFailureLoad:)]) {
                 [delegate networkFailureLoad:response];
             }
         }];
 }
 
-//
 + (STHttpResponse *)getFailResponseInfo:(NSHTTPURLResponse *)resp errorInfo:(NSError *)error {
     STHttpResponse *response = [[STHttpResponse alloc] init];
     response.responseHeaders = resp.allHeaderFields;
@@ -241,16 +244,12 @@ static const NSInteger kDefaultCacheMaxCacheCount = 1024 * 1024 * 5; // 5 M
     if ([NSString isEmpty:response.responseString]) {
         response.responseString = error.description;
     }
-
-    //    NSString *unicodeStr  = [NSString stringWithCString:[response.responseString cStringUsingEncoding:NSUTF8StringEncoding] encoding:NSNonLossyASCIIStringEncoding];
-    //    response.responseString = unicodeStr;
-
     response.message = [NSString stringWithFormat:@">﹏< Network Fail ErrorCode:%d", (int) response.errorCode];
-
     return response;
 }
 
 #pragma mark-- 缓存处理及相关
+
 + (void)storeCache:(id)responseObject withURL:(NSString *)url {
     YYDiskCache *diskCache = [[YYDiskCache alloc] initWithPath:ST_NetworkingCachePath inlineThreshold:kDefaultCacheMaxCacheCount];
     [diskCache setObject:responseObject forKey:url];
@@ -263,16 +262,14 @@ static const NSInteger kDefaultCacheMaxCacheCount = 1024 * 1024 * 5; // 5 M
 
 //清空缓存的数据
 + (void)deleteCache {
-    YYDiskCache *diskCache = [[YYDiskCache alloc] initWithPath:HB_NetworkingCachePath inlineThreshold:kDefaultCacheMaxCacheCount];
+    YYDiskCache *diskCache = [[YYDiskCache alloc] initWithPath:ST_NetworkingCachePath inlineThreshold:kDefaultCacheMaxCacheCount];
     [diskCache removeAllObjects];
-    //    NSFileManager *mgr = [NSFileManager defaultManager];
-    //    [mgr removeItemAtPath:cachePath error:nil];
 }
 
 //取消 某个url 的所有请求
 + (void)cancelRequsetWithURL:(NSString *)url {
     //移除 task
-    XHBAFManager *manager = [XHBAFManager defaultNetManager];
+    STAFManager *manager = [STAFManager defaultNetManager];
     NSArray *arr = [manager.taksDic objectForKey:url];
     if (!arr) {
         return;
@@ -285,7 +282,6 @@ static const NSInteger kDefaultCacheMaxCacheCount = 1024 * 1024 * 5; // 5 M
     [manager.recursiveLock unlock];
 }
 
-//
 #pragma mark--  绕过DNS解析 直接使用ip   只有内部请求才做这个功能
 + (NSString *)changeURL:(NSString *)realURL {
     // 转到 分类中实现 只提供单纯网络请求不实现具体业务需求
