@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'STUtils' do |b|
-      a.source_files = 'STPublic/Classes/STUtils/**/*.{h,m}'
+      b.source_files = 'STPublic/Classes/STUtils/**/*.{h,m}'
   end
 
   # s.resource_bundles = {
