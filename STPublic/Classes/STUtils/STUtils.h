@@ -11,8 +11,6 @@
 #import "STMacro.h"
 #import <CocoaLumberjack/CocoaLumberjack.h>
 
-
-
 #ifdef DEBUG
 static const int ddLogLevel = DDLogLevelVerbose;
 #else

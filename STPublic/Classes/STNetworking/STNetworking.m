@@ -28,17 +28,17 @@ static const NSInteger kDefaultCacheMaxCacheCount = 1024 * 1024 * 5; // 5 M
     STAFManager *manager = [STAFManager defaultNetManager];
     
     //确保 每次请求的 url 和 header 参数值唯一 线程锁
-    ST_LOCK(manager.reqGWLock);
+    LOCK(manager.reqGWLock);
     NSTimeInterval startTime = [[NSDate date] timeIntervalSince1970];
     NSString *changeURL = [self.class changeURL:url];
     if ([NSString isEmpty:changeURL]) {
-        ST_UNLOCK(manager.reqGWLock);
+        UNLOCK(manager.reqGWLock);
         return nil;
     }
     //添加一大串公用的头信息 和 添加自定义认证头信息
     NSDictionary *headers = [self.class getHeadersPerUrl:url parameterDic:parameter];
     //确保 每次请求的 url 和 header 参数值唯一  线程锁
-    ST_UNLOCK(manager.reqGWLock);
+    UNLOCK(manager.reqGWLock);
     
     if (kHBHTTPGet == method) {
         DDLogWarn(@"\n发送GET请求 url: %@ \r\n", changeURL);

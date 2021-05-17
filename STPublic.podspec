@@ -45,5 +45,9 @@ Pod::Spec.new do |s|
   s.subspec 'STUtils' do |c|
       c.source_files = 'STPublic/Classes/STUtils/**/*.{h,m}'
   end
+  
+  s.subspec 'STUtils' do |d|
+      c.source_files = 'STPublic/Classes/STUIKit/**/*.{h,m}'
+  end
 
 end
