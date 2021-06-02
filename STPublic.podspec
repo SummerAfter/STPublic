@@ -45,12 +45,9 @@ Pod::Spec.new do |s|
   s.subspec 'STUtils' do |c|
       c.source_files = 'STPublic/Classes/STUtils/**/*.{h,m}'
   end
+  
+  s.subspec 'STUtils' do |d|
+      c.source_files = 'STPublic/Classes/STUIKit/**/*.{h,m}'
+  end
 
-  # s.resource_bundles = {
-  #   'STPublic' => ['STPublic/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

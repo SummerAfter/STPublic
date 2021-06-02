@@ -45,4 +45,36 @@
     }
     return nil;
 }
+
+@end
+
+@implementation NSMutableDictionary (STKit)
+
++ (NSMutableDictionary *)attributesWithFont:(UIFont *)font {
+    return [NSMutableDictionary dictionaryWithObjectsAndKeys:font, NSFontAttributeName, nil];
+}
+
++ (NSMutableDictionary *)attributesWithFont:(UIFont *)font
+                              lineBreakMode:(NSLineBreakMode)lineBreakMode {
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.lineBreakMode = lineBreakMode;
+    return [NSMutableDictionary dictionaryWithObjectsAndKeys:font, NSFontAttributeName, paragraphStyle, NSParagraphStyleAttributeName, nil];
+}
+
+// 安全添加 键值对
+- (void)setObjectSafe:(id)anObject forKeySafe:(NSString *)aKey {
+    if (!anObject || [NSString isEmpty:aKey]) {
+        return;
+    }
+
+    [self setObject:anObject forKey:aKey];
+}
+
+- (void)setObjectSafely:(id)anObject forCopyingKeySafely:(id<NSCopying>)aKey {
+    if (!anObject || !aKey) {
+        return;
+    }
+    [self setObject:anObject forKey:aKey];
+}
+
 @end

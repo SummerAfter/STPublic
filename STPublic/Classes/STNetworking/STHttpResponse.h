@@ -16,6 +16,7 @@ typedef NS_ENUM(NSInteger, STEnumResponseStatus) {
     kSTResponseStatusDefault = 0,
     kSTResponseStatusSuccess = 1,
     kSTResponseStatusFailure = 2,
+    kSTResponseStatusJsonError = 3,
 };
 
 @interface STHttpResponse : NSObject
