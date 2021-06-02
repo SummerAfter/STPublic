@@ -1485,6 +1485,14 @@
 			path = STPublic/Classes/STCategory/UIColor;
 			sourceTree = "<group>";
 		};
+		C3690128265645AB004BA9D0 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C3CFB2F32648DADD00C4973E /* STCategory.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		C3CFB2CF2648CFDF00C4973E /* STUIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -1828,7 +1836,7 @@
 		F3EFD57D1F4AE73B94CD547690F33803 /* STCategory */ = {
 			isa = PBXGroup;
 			children = (
-				C3CFB2F32648DADD00C4973E /* STCategory.h */,
+				C3690128265645AB004BA9D0 /* Other */,
 				2244D6457378436743819998CB6E8C3B /* NSData */,
 				FCAA3B52400BD963D6BFA695D1EE9415 /* NSDictionary */,
 				95DE3E3D176504F2A170272A595E9788 /* NSString */,
